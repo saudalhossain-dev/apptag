@@ -76,6 +76,9 @@ Home Page CSS
     background-color: transparent;
     transition: all linear 0.4s;
 }
+#main-menu .right-menu ul li button a {
+    color: var(--text-white);
+}
 #main-menu .left-menu .nav-item .nav-link:hover,
 #main-menu .right-menu ul li button:hover {
     background-color: var(--bg-primary-color);
