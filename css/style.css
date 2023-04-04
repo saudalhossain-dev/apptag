@@ -447,4 +447,61 @@ Contact Page CSS
     line-height: 30px;
     padding-right: 25px;
 }
+#contact-us-wrapper .contact-form-title {
+    text-align: center;
+}
+#contact-us-wrapper .contact-form-title h1 {
+    font-size: 36px;
+    line-height: 48px;
+    color: var(--text-blue);
+    font-weight: 700;
+}
+#contact-us-wrapper .contact-form-title p {
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--text-primary-color);
+    font-weight: 400;
+}
+#contact-us-wrapper form {
+    margin-top: 50px;
+}
+#contact-us-wrapper .contact-form-input .form-control {
+    font-size: 20px;
+    line-height: 27px;
+    background-color: #ebebeb;
+    padding: 11px 0 18px 34px;
+    margin-bottom: 42px;
+}
+#contact-us-wrapper .contact-form-input .form-control::placeholder {
+    color: var(--text-primary-color);
+}
+#contact-us-wrapper .contact-form-input textarea {
+    padding: 11px 0 18px 34px;
+    width: 100%;
+    border: none;
+    background-color: #ebebeb;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+}
+#contact-us-wrapper .contact-form-input textarea::placeholder {
+    color: #b2b2b2;
+}
+#contact-us-wrapper .contact-form-input .send-button {
+    width: 100%;
+    padding: 12px 0 17px;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--text-white);
+    background-color: var(--bg-primary-color);
+    border-radius: 10px;
+    margin-top: 35px;
+    border: 1px solid var(--bg-primary-color);
+    transition: all linear 0.4s;
+}
+#contact-us-wrapper .contact-form-input .send-button:hover {
+    color: var(--text-blue);
+    background-color: transparent;
+    border: 1px solid var(--bg-secondary-color);
+}
 /* Conatct Text Image Part CSS End */
