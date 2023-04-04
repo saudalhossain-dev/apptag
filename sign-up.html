@@ -21,248 +21,58 @@
 
 <body>
     <!-- NavBar Part HTML Start -->
-    <section id="main-menu bg-secondary-subtle">
-        <nav class="navbar navbar-expand-lg bg-secondary-subtle">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="images/Apptagg Logo White.png" alt="AppTag White Logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <section id="main-menu">
+        <div class="container">
+            <a href="index.html"><img src="images/Apptagg Logo Color.png" alt="AppTag White Logo"></a>
+        </div>
     </section>
     <!-- NavBar Part HTML End -->
-    <!-- Banner Part HTML Start -->
-    <section id="banner-wrapper">
+    <!-- Login Part HTML Start -->
+    <section id="login-wrapper">
         <div class="container">
-            <div class="row">
-                <div class="banner-content-wrapper d-flex align-items-center justify-content-center">
-                    <div class="banner-text col-lg-5">
-                        <h1>Hire the Top Talent <br> Freelancer</h1>
-                        <p>Apptagg is an exclusive network of the top freelance software developers, designers, finance
-                            experts, product managers, and project managers in the world. Top companies hire Toptal
-                            freelancers for their most important projects.</p>
-                        <button>
-                            <a href="#">Hire top talent</a>
-                        </button>
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="login-form col-lg-7">
+                    <div class="login-form-title">
+                        <h1>Sign Up</h1>
+                        <p>Add your details to sign up</p>
                     </div>
-                    <div class="banner-image col-lg-5">
-                        <img src="images/Header Image.png" alt="Banner Image">
-                    </div>
+                    <form>
+                        <div class="login-form-input">
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" id="name" placeholder="Name" name="name"
+                                    value="" required>
+                            </div>
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email"
+                                    name="email" value="" required>
+                            </div>
+                            <div class="col-sm-12">
+                                <input type="tel" class="form-control" id="mobile" placeholder="Mobile No" name="mobile"
+                                    value="" required>
+                            </div>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" id="address" placeholder="Address"
+                                    name="address" value="" required>
+                            </div>
+                            <div class="col-sm-12">
+                                <input type="password" class="form-control" id="password" placeholder="Password"
+                                    name="password" value="" required>
+                            </div>
+                            <div class="col-sm-12">
+                                <input type="password" class="form-control" id="confirm-password"
+                                    placeholder="Confirm Password" name="confirm-password" value="" required>
+                            </div>
+                            <button class="btn btn-primary login-button" id="submit" type="submit"
+                                value="login">Login</button>
+                            <p class="text-center sign-up-link">Already have an account? <a href="log-in.html">login</a>
+                            </p>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Banner Part HTML End -->
-    <!-- Services Part HTML Start -->
-    <section id="service-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="service-item-wrapper d-flex align-items-center justify-content-center">
-                    <div class="service-item-head col-lg-4">
-                        <h5>OUR SERVICES</h5>
-                        <H3>What we do</H3>
-                        <p>Our advertising agency provides wide specter of services for medical and insurance industry.
-                            Get a free consultation with a marketing expert to discover opportunities for you type of
-                            products or services.</p>
-                    </div>
-                    <div class="service-item col-lg-4">
-                        <img src="images/services-curve.png" alt="Services Graphic Design Icon">
-                        <h5>Graphic Design</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut</p>
-                    </div>
-                    <div class="service-item col-lg-4">
-                        <img src="images/services-social-media-marketing.png" alt="Services Digital Marketing Icon">
-                        <h5>Digital Marketing</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="service-item-wrapper d-flex flex-wrap align-items-center justify-content-center">
-                    <div class="service-item col-lg-4">
-                        <img src="images/services-web-design.png" alt="Services Web Design & Development Icon">
-                        <h5>Web Design & Development</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut</p>
-                    </div>
-                    <div class="service-item col-lg-4">
-                        <img src="images/services-design.png" alt="Services UX UI Design Icon">
-                        <h5>UX UI Design</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut</p>
-                    </div>
-                    <div class="service-item col-lg-4">
-                        <img src="images/services-mobile-development.png" alt="Services App Development Icon">
-                        <h5>App Development</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut</p>
-                    </div>
-                    <div class="service-item col-lg-4">
-                        <img src="images/services-photo-camera-vintage.png" alt="Services Photography Icon">
-                        <h5>Photography</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut</p>
-                    </div>
-                    <div class="service-item col-lg-4">
-                        <img src="images/services-seo.png" alt="Services SEO Icon">
-                        <h5>SEO</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut</p>
-                    </div>
-                    <div class="service-item col-lg-4">
-                        <img src="images/services-ecommerce.png" alt="Services E-Commerce Website Build Icon">
-                        <h5>E-Commerce Website Build</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services Part HTML End -->
-    <!-- About Part HTML Start -->
-    <section id="about-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="about-content-wrapper d-flex align-items-center justify-content-center">
-                    <div class="about-content col-lg-5">
-                        <h3>What is AppTagg?</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim</p>
-                        <h5 class="high-quality">Find high-quality services at every price point. No hourly rates, just project-based pricing.</h5>
-                        <h5>Quality work done quickly</h5>
-                        <p>Find the right freelancer to begin working on your project within minutes.</p>
-                        <h5>Protected payments, every time</h5>
-                        <p>Always know what you'll pay upfront. Your payment isn't released until you approve the work.</p>
-                        <h5>24/7 support Questions?</h5>
-                        <p>Our round-the-clock support team is available to help anytime, anywhere.</p>
-                    </div>
-                    <div class="about-image col-lg-7">
-                        <img class="w-100 img-fluid" src="images/about-Image.png" alt="About Image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Part HTML End -->
-    <!-- Expert Part HTML Start -->
-    <section id="expert-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="expert-title">
-                    <h3>Meet Our Expert</h3>
-                </div>
-            </div>
-            <div class="row expert-slider-area">
-                <div class="expert-slider-main">
-                    <div class="expert-slider-wrapper">
-                        <div class="expert-slide-item-wrapper col-lg-3">
-                            <div class="expert-slide-item">
-                                <div class="expert-member-image">
-                                    <img src="images/expert-1.png" alt="Expert Image 1">
-                                </div>
-                                <div class="expert-memebr-title">
-                                    <h4>Iqbal Hossen</h4>
-                                    <h5>Graphic Designer</h5>
-                                </div>
-                                <div class="expert-member-description">
-                                    Lorem ipsum dolor sit amet, solum dictas vim cu, ne his hendrerit deterruisset, id sed
-                                    doctus fuisset
-                                </div>
-                            </div>
-                        </div>
-                        <div class="expert-slide-item-wrapper col-lg-3">
-                            <div class="expert-slide-item">
-                                <div class="expert-member-image">
-                                    <img src="images/expert-2.png" alt="Expert Image 1">
-                                </div>
-                                <div class="expert-memebr-title">
-                                    <h4>Israt Jahan</h4>
-                                    <h5>Digital Marketer</h5>
-                                </div>
-                                <div class="expert-member-description">
-                                    Lorem ipsum dolor sit amet, solum dictas vim cu, ne his hendrerit deterruisset, id sed
-                                    doctus fuisset
-                                </div>
-                            </div>
-                        </div>
-                        <div class="expert-slide-item-wrapper col-lg-3">
-                            <div class="expert-slide-item">
-                                <div class="expert-member-image">
-                                    <img src="images/expert-3.png" alt="Expert Image 1">
-                                </div>
-                                <div class="expert-memebr-title">
-                                    <h4>Ehsan Alvi</h4>
-                                    <h5>Web Designer</h5>
-                                </div>
-                                <div class="expert-member-description">
-                                    Lorem ipsum dolor sit amet, solum dictas vim cu, ne his hendrerit deterruisset, id sed
-                                    doctus fuisset
-                                </div>
-                            </div>
-                        </div>
-                        <div class="expert-slide-item-wrapper col-lg-3">
-                            <div class="expert-slide-item">
-                                <div class="expert-member-image">
-                                    <img src="images/expert-4.png" alt="Expert Image 1">
-                                </div>
-                                <div class="expert-memebr-title">
-                                    <h4>Monir Hossain</h4>
-                                    <h5>Content Writer</h5>
-                                </div>
-                                <div class="expert-member-description">
-                                    Lorem ipsum dolor sit amet, solum dictas vim cu, ne his hendrerit deterruisset, id sed
-                                    doctus fuisset
-                                </div>
-                            </div>
-                        </div>
-                        <div class="expert-slide-item-wrapper col-lg-3">
-                            <div class="expert-slide-item">
-                                <div class="expert-member-image">
-                                    <img src="images/expert-2.png" alt="Expert Image 1">
-                                </div>
-                                <div class="expert-memebr-title">
-                                    <h4>Israt Jahan</h4>
-                                    <h5>Digital Marketer</h5>
-                                </div>
-                                <div class="expert-member-description">
-                                    Lorem ipsum dolor sit amet, solum dictas vim cu, ne his hendrerit deterruisset, id sed
-                                    doctus fuisset
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-angle-left left"></i>
-                    <i class="fa-solid fa-angle-right right"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Expert Part HTML End -->
+    <!-- Login Part HTML End -->
     <!-- Footer Part HTML Start -->
     <section id="footer-wrapper">
         <div class="container">
@@ -298,7 +108,7 @@
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">Cookie Policy</a></li>
-                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
                         </ul>
                     </div>
                     <div class="footer-social-media col-lg-2">

@@ -475,6 +475,10 @@ Contact Page CSS
 #contact-us-wrapper .contact-form-input .form-control::placeholder {
     color: var(--text-primary-color);
 }
+/* #contact-us-wrapper .contact-form-input input:focus {
+    outline: none !important;
+    border: none !important;
+} */
 #contact-us-wrapper .contact-form-input textarea {
     padding: 11px 0 18px 34px;
     width: 100%;
@@ -483,6 +487,10 @@ Contact Page CSS
     font-size: 20px;
     line-height: 27px;
     font-weight: 400;
+}
+#contact-us-wrapper .contact-form-input textarea:focus {
+    outline: none;
+    border: none;
 }
 #contact-us-wrapper .contact-form-input textarea::placeholder {
     color: #b2b2b2;
@@ -505,3 +513,138 @@ Contact Page CSS
     border: 1px solid var(--bg-secondary-color);
 }
 /* Conatct Text Image Part CSS End */
+
+
+/* ===========================
+Login Page CSS
+=========================== */
+/* Login Part CSS Start */
+#login-wrapper {
+    background-color: var(--bg-gray);
+    padding-top: 280px;
+    padding-bottom: 264px;
+}
+#login-wrapper .login-form .login-form-title {
+    text-align: center;
+}
+#login-wrapper .login-form .login-form-title h1 {
+    font-size: 38px;
+    line-height: 51px;
+    color: var(--text-blue);
+    font-weight: 500;
+}
+#login-wrapper .login-form .login-form-title p {
+    font-size: 21px;
+    line-height: 28px;
+    color: var(--text-primary-color);
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+#login-wrapper .login-form .login-form-input input {
+    padding: 12px 0 22px 38px;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 31px;
+}
+#login-wrapper .login-form .login-form-input .login-button {
+    width: 100%;
+    padding: 13px 0 20px;
+    background-color: var(--bg-primary-color);
+    border: 1px solid var(--bg-primary-color);
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+#login-wrapper .login-form .login-form-input .facebook-button {
+    width: 100%;
+    padding: 13px 0 20px;
+    background-color: #367FC0;
+    border: 1px solid #367FC0;
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+#login-wrapper .login-form .login-form-input .google-button {
+    width: 100%;
+    padding: 13px 0 20px;
+    background-color: #DD4B39;
+    border: 1px solid #DD4B39;
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 300;
+    margin-bottom: 90px;
+}
+#login-wrapper .login-form .login-form-input .facebook-icon,
+#login-wrapper .login-form .login-form-input .google-icon {
+    font-size: 18px;
+    margin-right: 24px;
+}
+#login-wrapper .login-form .login-form-input .forgot-pass {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+    color: #7C7D7E;
+    margin-bottom: 54px;
+}
+#login-wrapper .login-form .login-form-input .login-with {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+    color: #7C7D7E;
+    margin-bottom: 30px;
+}
+#login-wrapper .login-form .login-form-input .sign-up-link {
+    position: relative;
+}
+#login-wrapper .login-form .login-form-input .sign-up-link:after {
+    content: '';
+    width: 130px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--bg-secondary-color);
+    position: absolute;
+    left: 50%;
+    bottom: -28px;
+    transform: translateX(-50%);
+}
+/* Login Part CSS End */
+
+
+/* ===========================
+Login Page CSS
+=========================== */
+#expert-wrapper .expert-detail-upper h4 {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--text-blue);
+}
+#expert-wrapper .expert-detail-upper h5 {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--text-primary-color);
+}
+#expert-wrapper .expert-detail-social-icon i {
+    font-size: 22px;
+    margin-right: 12px;
+    color: var(--text-primary-color);
+}
+#expert-wrapper .expert-detail-lower {
+    margin-top: 47px;
+    margin-bottom: 100px;
+    height: 130px;
+    overflow: hidden;
+}
+#expert-wrapper .expert-detail-lower p{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 300;
+    color: var(--text-primary-color);
+    text-align: center;
+}
