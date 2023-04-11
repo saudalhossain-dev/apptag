@@ -24,14 +24,17 @@
     <section id="main-menu">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="images/Apptagg Logo White.png"
+                <a class="navbar-brand logo-white-display" href="index.html"><img src="images/Apptagg Logo White.png"
                         alt="AppTag White Logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> -->
+                <div class="toggle-bar d-lg-none">
+                    <i class="fa-solid fa-bars show"></i>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="left-menu m-auto">
+                    <div class="left-menu ms-auto">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Clients</a>
@@ -47,25 +50,66 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="right-menu m-auto">
+                    <div class="left-menu ms-auto">
                         <ul class="navbar-nav">
-                            <li><button><a href="#">Become a Seller</a></button></li>
-                            <li><button><a href="our-expert.html">Hire top talent</a></button></li>
-                            <li><button><a href="sign-up.html">Register</a></button></li>
-                            <li><button><a href="log-in.html">Log in</a></button></li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Become a seller</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="our-expert.html">Hire top talent</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sign-up.html">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="log-in.html">Log in</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
+        <div class="sidebar d-lg-none">
+            <div class="left-menu m-auto">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Become a seller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="our-expert.html">Hire top talent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sign-up.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="log-in.html">Log in</a>
+                    </li>
+                </ul>
+                <div class="cross-btn">
+                    <i class="fa-solid fa-xmark cross-icon"></i>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- NavBar Part HTML End -->
     <!-- Banner Part HTML Start -->
     <section id="banner-wrapper">
         <div class="container">
             <div class="row">
-                <div class="banner-content-wrapper d-flex align-items-center justify-content-center">
-                    <div class="banner-text col-lg-5">
+                <div class="banner-content-wrapper d-flex flex-wrap align-items-center justify-content-center">
+                    <div class="banner-text col-xl-6 col-lg-6 col-md-7 col-sm-12 ps-lg-5 ps-sm-3 mt-sm-4 me-sm-0 order-md-1 order-sm-2">
                         <h1>Hire the Top Talent <br> Freelancer</h1>
                         <p>Apptagg is an exclusive network of the top freelance software developers, designers, finance
                             experts, product managers, and project managers in the world. Top companies hire Toptal
@@ -74,8 +118,8 @@
                             <a href="#">Hire top talent</a>
                         </button>
                     </div>
-                    <div class="banner-image col-lg-5">
-                        <img src="images/Header Image.png" alt="Banner Image">
+                    <div class="banner-image col-xl-4 col-lg-6 col-md-5 col-sm-12 order-md-2 order-sm-1">
+                        <img class="w-100 img-fluid" src="images/Header Image.png" alt="Banner Image">
                     </div>
                 </div>
             </div>
@@ -93,7 +137,7 @@
             <div class="row">
                 <div class="expert-detail col-lg-10 mx-auto">
                     <div class="expert-detail-upper text-center">
-                        <img src="images/expert-2-big.png" alt="Expert Detail Image">
+                        <img class="w-100 img-fluid" src="images/expert-2-big.png" alt="Expert Detail Image">
                         <h4>Israt Jahan</h4>
                         <h5>Digital Marketer</h5>
                         <div class="expert-detail-social-icon">
@@ -126,80 +170,85 @@
                         <div class="expert-slide-item-wrapper col-lg-3">
                             <div class="expert-slide-item">
                                 <div class="expert-member-image">
-                                    <img src="images/expert-1.png" alt="Expert Image 1">
+                                    <img class="w-100 img-fluid" src="images/expert-1.png" alt="Expert Image 1">
                                 </div>
-                                <div class="expert-memebr-title">
+                                <div class="expert-member-title">
                                     <h4>Iqbal Hossen</h4>
                                     <h5>Graphic Designer</h5>
+                                    <hr>
                                 </div>
                                 <div class="expert-member-description">
-                                    Lorem ipsum dolor sit amet, solum dictas vim cu, ne his hendrerit deterruisset, id
-                                    sed
-                                    doctus fuisset
+                                    <p>Lorem ipsum dolor sit amet, solum dictas vim cu, ne his hendrerit deterruisset, id
+                                        sed
+                                        doctus fuisset</p>
                                 </div>
                             </div>
                         </div>
                         <div class="expert-slide-item-wrapper col-lg-3">
                             <div class="expert-slide-item">
                                 <div class="expert-member-image">
-                                    <img src="images/expert-2.png" alt="Expert Image 1">
+                                    <img class="w-100 img-fluid" src="images/expert-2.png" alt="Expert Image 1">
                                 </div>
-                                <div class="expert-memebr-title">
+                                <div class="expert-member-title">
                                     <h4>Israt Jahan</h4>
                                     <h5>Digital Marketer</h5>
+                                    <hr>
                                 </div>
                                 <div class="expert-member-description">
-                                    Lorem ipsum dolor sit amet, solum dictas vim cu, ne his hendrerit deterruisset, id
-                                    sed
-                                    doctus fuisset
+                                    <p>Lorem ipsum dolor sit amet, solum dictas vim cu, ne his hendrerit deterruisset, id
+                                        sed
+                                        doctus fuisset</p>
                                 </div>
                             </div>
                         </div>
                         <div class="expert-slide-item-wrapper col-lg-3">
                             <div class="expert-slide-item">
                                 <div class="expert-member-image">
-                                    <img src="images/expert-3.png" alt="Expert Image 1">
+                                    <img class="w-100 img-fluid" src="images/expert-3.png" alt="Expert Image 1">
                                 </div>
-                                <div class="expert-memebr-title">
+                                <div class="expert-member-title">
                                     <h4>Ehsan Alvi</h4>
                                     <h5>Web Designer</h5>
+                                    <hr>
                                 </div>
                                 <div class="expert-member-description">
-                                    Lorem ipsum dolor sit amet, solum dictas vim cu, ne his hendrerit deterruisset, id
-                                    sed
-                                    doctus fuisset
+                                    <p>Lorem ipsum dolor sit amet, solum dictas vim cu, ne his hendrerit deterruisset, id
+                                        sed
+                                        doctus fuisset</p>
                                 </div>
                             </div>
                         </div>
                         <div class="expert-slide-item-wrapper col-lg-3">
                             <div class="expert-slide-item">
                                 <div class="expert-member-image">
-                                    <img src="images/expert-4.png" alt="Expert Image 1">
+                                    <img class="w-100 img-fluid" src="images/expert-4.png" alt="Expert Image 1">
                                 </div>
-                                <div class="expert-memebr-title">
+                                <div class="expert-member-title">
                                     <h4>Monir Hossain</h4>
                                     <h5>Content Writer</h5>
+                                    <hr>
                                 </div>
                                 <div class="expert-member-description">
-                                    Lorem ipsum dolor sit amet, solum dictas vim cu, ne his hendrerit deterruisset, id
-                                    sed
-                                    doctus fuisset
+                                    <p>Lorem ipsum dolor sit amet, solum dictas vim cu, ne his hendrerit deterruisset, id
+                                        sed
+                                        doctus fuisset</p>
                                 </div>
                             </div>
                         </div>
                         <div class="expert-slide-item-wrapper col-lg-3">
                             <div class="expert-slide-item">
                                 <div class="expert-member-image">
-                                    <img src="images/expert-2.png" alt="Expert Image 1">
+                                    <img class="w-100 img-fluid" src="images/expert-2.png" alt="Expert Image 1">
                                 </div>
-                                <div class="expert-memebr-title">
+                                <div class="expert-member-title">
                                     <h4>Israt Jahan</h4>
                                     <h5>Digital Marketer</h5>
+                                    <hr>
                                 </div>
                                 <div class="expert-member-description">
-                                    Lorem ipsum dolor sit amet, solum dictas vim cu, ne his hendrerit deterruisset, id
-                                    sed
-                                    doctus fuisset
+                                    <p>Lorem ipsum dolor sit amet, solum dictas vim cu, ne his hendrerit deterruisset, id
+                                        sed
+                                        doctus fuisset</p>
                                 </div>
                             </div>
                         </div>
@@ -222,8 +271,8 @@
         </div>
         <div class="footer-main-content">
             <div class="container">
-                <div class="footer-main-content-wrapper d-flex">
-                    <div class="footer-head-office col-lg-6">
+                <div class="footer-main-content-wrapper d-flex flex-wrap">
+                    <div class="footer-head-office col-xxl-6 col-xl-6 col-md-6 col-12 col-lg-6 col-sm-12 pe-sm-3 ps-sm-5 ps-md-0 pt-sm-4">
                         <h5>Head Office</h5>
                         <ul>
                             <li class="d-flex align-items-start">
@@ -240,7 +289,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-about col-lg-4">
+                    <div class="footer-about col-xxl-4 col-xl-4 col-md-4 col-12 col-lg-4 col-sm-12 pe-sm-3 ps-sm-5 ps-md-0 pt-sm-4">
                         <h5>About</h5>
                         <ul>
                             <li><a href="#">About Us</a></li>
@@ -249,7 +298,7 @@
                             <li><a href="#">Terms & Conditions</a></li>
                         </ul>
                     </div>
-                    <div class="footer-social-media col-lg-2">
+                    <div class="footer-social-media col-xxl-2 col-xl-2 col-md-2 col-12 col-lg-2 col-sm-12 ps-sm-5 ps-md-0 pt-sm-4">
                         <h5>Social Media</h5>
                         <ul>
                             <li class="d-flex align-items-start">
@@ -275,7 +324,7 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-                <div class="footer-copyright-text">
+                <div class="footer-copyright-text ps-sm-5">
                     <p>© 2023 AppTagg | All Rights Reserved.</p>
                 </div>
             </div>

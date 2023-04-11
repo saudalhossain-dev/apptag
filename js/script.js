@@ -45,4 +45,13 @@ $(document).ready(function(){
           // instead of a settings object
         ]
       });
+      // Toggle Bar JS Part Start
+      $('.cross-icon').on("click", function(){
+        $('.sidebar').css('left', '-100%')
+      })
+      $('.show').on("click", function(){
+        $('.sidebar').css('left', '0px')
+        $('.sidebar').css('visibility', 'visible')
+      })
+      // Toggle Bar JS Part End
 })

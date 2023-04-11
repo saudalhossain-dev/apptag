@@ -67,10 +67,6 @@ Home Page CSS
 #main-menu .navbar .navbar-brand img {
   padding: 15px 30px 15px 45px;
 }
-/* #main-menu .left-menu .nav-item,
-#main-menu .right-menu ul li {
-  padding: 8px 10px 9px 10px;
-} */
 #main-menu .left-menu .nav-item .nav-link {
   font-size: 20px;
   line-height: 27px;
@@ -99,6 +95,54 @@ Home Page CSS
 #main-menu .left-menu .nav-item:hover a::after {
   width: 100%;
 }
+#main-menu .navbar .toggle-bar {
+  font-size: 30px;
+  color: var(--text-white);
+  padding-right: 30px;
+  cursor: pointer;
+}
+#main-menu .sidebar {
+  background: linear-gradient(
+    to left,
+    var(--bg-secondary-color),
+    var(--bg-primary-color)
+  );
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  transition: all linear 1s;
+}
+#main-menu .sidebar .left-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#main-menu .sidebar .left-menu .nav-item .nav-link {
+	font-size: 28px;
+	line-height: 36px;
+  font-weight: 500;
+	padding: 8px 0px 8px 0px;
+	text-align: center;
+}
+#main-menu .sidebar .left-menu .cross-btn {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#main-menu .sidebar .left-menu .cross-btn i {
+  font-size: 36px;
+  color: var(--text-white);
+  cursor: pointer;
+}
 /* NavBar CSS Part End */
 /* Banner CSS Part Start */
 #banner-wrapper {
@@ -107,8 +151,8 @@ Home Page CSS
     var(--bg-secondary-color),
     var(--bg-primary-color)
   );
-  padding-top: 283px;
-  padding-bottom: 145px;
+  padding-top: 200px;
+  padding-bottom: 60px;
 }
 #banner-wrapper .banner-text {
   margin-right: 82px;
@@ -364,6 +408,7 @@ Home Page CSS
   font-weight: 300;
   height: 62px;
   overflow: hidden;
+  transition: all linear 0.4s;
 }
 #expert-wrapper
   .expert-slider-wrapper
@@ -424,11 +469,12 @@ Home Page CSS
 /* Footer CSS Part Start */
 #footer-wrapper .footer-logo img {
   margin: 0 auto;
+  padding: 25px 0;
 }
 #footer-wrapper .footer-main-content {
   background-color: var(--bg-primary-color);
-  padding-top: 72px;
-  padding-bottom: 72px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 #footer-wrapper .footer-main-content .footer-head-office h5 {
   font-size: 20px;
@@ -573,8 +619,8 @@ About Page CSS
 =========================== */
 /* Banner CSS Part Start */
 #about-banner-wrapper {
-  padding-top: 345px;
-  padding-bottom: 255px;
+  padding-top: 190px;
+  padding-bottom: 80px;
   background: linear-gradient(
     to left,
     var(--bg-secondary-color),
@@ -593,10 +639,6 @@ About Page CSS
   background-color: var(--bg-gray);
   padding-top: 140px;
   padding-bottom: 192px;
-}
-#about-page-about-wrapper .about-page-about-content-wrapper {
-  padding-left: 180px;
-  padding-right: 180px;
 }
 #about-page-about-wrapper
   .about-page-about-content-wrapper
@@ -631,8 +673,7 @@ Contact Page CSS
 /* Conatct Text Image Part CSS Start */
 #contact-us-wrapper {
   background-color: var(--bg-gray);
-  padding-top: 155px;
-  padding-bottom: 171px;
+  padding: 48px 0;
 }
 #contact-us-wrapper .contact-us-text-image .contact-footer-head-office h5 {
   font-size: 20px;
@@ -678,12 +719,8 @@ Contact Page CSS
   margin-bottom: 42px;
 }
 #contact-us-wrapper .contact-form-input .form-control::placeholder {
-  color: var(--text-primary-color);
+  color: #7c7d7e;
 }
-/* #contact-us-wrapper .contact-form-input input:focus {
-    outline: none !important;
-    border: none !important;
-} */
 #contact-us-wrapper .contact-form-input textarea {
   padding: 11px 0 18px 34px;
   width: 100%;
@@ -722,11 +759,16 @@ Contact Page CSS
 /* ===========================
 Login Page CSS
 =========================== */
+/* Navbar Part CSS Start */
+#login-page-main-menu a img {
+  padding: 30px 0 30px 30px;
+}
+/* Navbar Part CSS End */
 /* Login Part CSS Start */
 #login-wrapper {
   background-color: var(--bg-gray);
-  padding-top: 280px;
-  padding-bottom: 264px;
+  padding-top: 72px;
+  padding-bottom: 60px;
 }
 #login-wrapper .login-form .login-form-title {
   text-align: center;
@@ -752,6 +794,9 @@ Login Page CSS
   margin-bottom: 31px;
   border: 1px solid transparent;
   outline: none;
+}
+#login-wrapper .login-form .login-form-input input::placeholder {
+  color: rgb(167, 167, 167);
 }
 #login-wrapper .login-form .login-form-input input:focus {
   border: none !important;
@@ -823,7 +868,7 @@ Login Page CSS
 /* Login Part CSS End */
 
 /* ===========================
-Login Page CSS
+Expert Page CSS
 =========================== */
 #expert-wrapper .expert-detail-upper h4 {
   font-size: 36px;
@@ -831,6 +876,9 @@ Login Page CSS
   font-weight: 400;
   text-transform: uppercase;
   color: var(--text-blue);
+}
+#expert-wrapper .expert-detail-upper img {
+  max-width: 320px;
 }
 #expert-wrapper .expert-detail-upper h5 {
   font-size: 20px;

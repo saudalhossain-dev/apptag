@@ -224,6 +224,18 @@
     line-height: 30px;
     margin-bottom: 20px;
   }
+  #expert-wrapper .expert-detail-upper h4 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  #expert-wrapper .expert-detail-upper h5 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  #expert-wrapper .expert-detail-social-icon i {
+    font-size: 16px;
+    margin-right: 20px;
+  }
   #expert-wrapper
     .expert-slider-main
     .expert-slide-item
@@ -290,22 +302,137 @@
     font-weight: 400;
   }
   #expert-wrapper
-  .expert-slider-wrapper
-  .expert-slide-item
-  .expert-member-title
-  h5 {
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 300;
-}
+    .expert-slider-wrapper
+    .expert-slide-item
+    .expert-member-title
+    h5 {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 300;
+  }
   /* Expert CSS Part End */
   /* Footer CSS Part Start */
+  #footer-wrapper .footer-logo img {
+    padding: 15px 0;
+    transform: scale(0.8);
+  }
   #footer-wrapper .footer-main-content {
     padding-left: 24px;
     padding-right: 24px;
+  }
+  #footer-wrapper .footer-main-content .footer-head-office ul li p,
+  #footer-wrapper .footer-main-content .footer-head-office ul li i,
+  #footer-wrapper .footer-main-content .footer-about ul li a,
+  #footer-wrapper .footer-main-content .footer-social-media ul li p,
+  #footer-wrapper .footer-main-content .footer-social-media ul li i {
+    font-size: 16px;
+    line-height: 22px;
   }
   #footer-wrapper .footer-main-content .footer-about {
     margin: 24px 0;
   }
   /* Footer CSS Part End */
+  /* About Page About CSS Part Start */
+  #about-banner-wrapper {
+    padding-top: 140px;
+    padding-bottom: 60px;
+  }
+  #about-banner-wrapper .about-banner-text h3 {
+    font-size: 30px;
+  }
+  #about-page-about-wrapper .about-page-about-content-wrapper .about-page-about-content h3 {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+  #about-page-about-wrapper .about-page-about-content-wrapper .about-page-about-content p {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 20px;
+  }
+  #about-page-about-wrapper .about-page-about-content {
+    padding: 0 25px;
+  }
+  #about-page-about-wrapper {
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+  /* About Page About CSS Part End */
+  /* Contact Page Head Office CSS Part Start */
+  #contact-us-wrapper .contact-us-text-image .contact-footer-head-office ul li p,
+  #contact-us-wrapper .contact-us-text-image .contact-footer-head-office ul li i {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  #contact-us-wrapper .contact-form-title h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  #contact-us-wrapper .contact-form-title p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #contact-us-wrapper .contact-form-input .form-control {
+    padding: 8px 0 12px 28px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  #contact-us-wrapper .contact-form-input .send-button {
+    padding: 8px 0 12px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  /* Contact Page Head Office CSS Part End */
+  /* Login Page Login CSS Part Start */
+  #login-page-main-menu a img {
+    transform: scale(0.8);
+  }
+  #login-page-main-menu a img {
+    padding-left: 0;
+  }
+  #login-page-main-menu .container {
+    text-align: center;
+  }
+  #login-wrapper {
+    padding-top: 32px;
+  }
+  #login-wrapper .login-form .login-form-title h1 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  #login-wrapper .login-form .login-form-title p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 18px;
+  }
+  #login-wrapper .login-form .login-form-input input {
+    padding: 8px 0 12px 28px;
+    margin-bottom: 20px;
+  }
+  #login-wrapper .login-form .login-form-input .login-button,
+  #login-wrapper .login-form .login-form-input .facebook-button,
+  #login-wrapper .login-form .login-form-input .google-button {
+    padding: 8px 0 12px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  #login-wrapper .login-form .login-form-input .facebook-icon, #login-wrapper .login-form .login-form-input .google-icon {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  #login-wrapper .login-form .login-form-input .forgot-pass {
+    margin-bottom: 25px;
+  }
+  #login-wrapper .login-form .login-form-input .login-with {
+    margin-bottom: 15px;
+  }
+  #login-wrapper .login-form .login-form-input .google-button {
+    margin-bottom: 30px;
+  }
+  #login-wrapper .login-form .login-form-input .sign-up-link:after {
+    bottom: -14px;
+  }
+  /* Login Page Login CSS Part End */
 }
