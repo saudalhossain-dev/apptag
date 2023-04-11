@@ -1,69 +1,311 @@
-/* Media Query 1400px */
-@media (max-width: 1400px) {
-    /* Services CSS Part Start */
-    
-    /* Services CSS Part End */
+/* ================================
+========Media Query 1399px=========
+================================ */
+@media (max-width: 1399px) {
+  /* Common CSS Part Start */
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1320px;
+  }
+  /* Common CSS Part End */
+  /* Navbar CSS Part Start */
+  #main-menu .left-menu .nav-item .nav-link,
+  #main-menu .right-menu ul li button {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 8px 12px 9px 12px;
+  }
+  /* Navbar CSS Part End */
+  /* Expart CSS Part Start */
+  #expert-wrapper .expert-slider-main .left {
+    left: -25px;
+  }
+  #expert-wrapper .expert-slider-main .right {
+    right: -25px;
+  }
+  /* Expart CSS Part End */
 }
-/* Media Query 1251px */
-@media (max-width: 1251px) {
-    /* Common CSS Part Start */
-    
-    /* Common CSS Part End */
-    /* Accordion CSS Part Start */
-    
-    /* Accordion CSS Part End */
-    /* Services CSS Part Start */
-    
-    /* Services CSS Part End */
+/* ================================
+========Media Query 1199px=========
+================================ */
+@media (max-width: 1199px) {
+  /* Common CSS Part Start */
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 960px;
+  }
+  /* Common CSS Part End */
+  /* Navbar CSS Part Start */
+  #main-menu .left-menu .nav-item .nav-link,
+  #main-menu .right-menu ul li button {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 8px 8px 8px;
+  }
+  /* Navbar CSS Part End */
+  /* Banner CSS Part Start */
+  #banner-wrapper .banner-text h1 {
+    font-size: 48px;
+    line-height: 64px;
+  }
+  /* Banner CSS Part End */
+  /* Services CSS Part Start */
+  #service-wrapper .service-item-head .service-item-card p {
+    height: 108px;
+    overflow: hidden;
+  }
+  #service-wrapper .service-item-head .service-item-card h3 {
+    font-size: 34px;
+    line-height: 44px;
+  }
+  #service-wrapper .service-item-head .service-item-card h5 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  /* Services CSS Part End */
+  /* About CSS Part Start */
+  #about-wrapper .about-image {
+    margin-left: 0px;
+  }
+  /* About CSS Part End */
 }
-/* Media Query 992px */
-@media (max-width: 992px) {
-    /* Common CSS Part Start */
-    
-    /* Common CSS Part End */
-    /* Accordion CSS Part Start */
-    
-    /* Accordion CSS Part End */
-    /* Testimonial CSS Part End */
-    
-    /* Testimonial CSS Part End */
+/* ================================
+========Media Query 991px==========
+================================ */
+@media (max-width: 991px) {
+  /* Common CSS Part Start */
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 760px;
+  }
+  /* Common CSS Part End */
+  /* Navbar CSS Part Start */
+  #main-menu .navbar .navbar-brand img {
+    transform: scale(0.9);
+    padding: 12px 25px 12px 25px;
+  }
+  /* Navbar CSS Part End */
+  /* Banner CSS Part Start */
+  #banner-wrapper .banner-text {
+    margin-right: 18px;
+  }
+  #banner-wrapper .banner-text h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  /* Banner CSS Part End */
+  /* Services CSS Part End */
+
+  /* Services CSS Part End */
 }
-/* Media Query 767px */
-@media (max-width: 767px){
-    /* Common CSS Part Start */
-    
-    /* Common CSS Part End */
-    /* Resume CSS Part Start */
-    
-    /* Services CSS Part End */
+/* ================================
+========Media Query 767px==========
+================================ */
+@media (max-width: 767px) {
+  /* Banner CSS Part Start */
+  #banner-wrapper .banner-content-wrapper .banner-image {
+    text-align: center;
+  }
+  /* Banner CSS Part End */
+  /* Navbar CSS Part Start */
+  #main-menu .navbar .navbar-brand img {
+    transform: scale(0.8);
+    padding: 10px 20px 10px 20px;
+  }
+  /* Navbar CSS Part End */
+  /* About CSS Part Start */
+  #about-wrapper .about-content-wrapper .about-image .video-icon img {
+    width: 75px;
+    height: 75px;
+  }
+  /* About CSS Part End */
 }
-/* Media Query 576px */
-@media (max-width: 576px) {
-    /* Common CSS Part Start */
-    
-    /* Common CSS Part End */
-    /* Navbar CSS Part Start */
-    
-    /* Navbar CSS Part End */
-    /* Banner CSS Part Start */
-    
-    /* Banner CSS Part End */
-    /* Accordion CSS Part Start */
-    
-    /* Accordion CSS Part End */
-    /* Resume CSS Part Start */
-    
-    /* Resume CSS Part End */
-    /* Testimonial CSS Part End */
-    
-    /* Testimonial CSS Part End */
+/* ================================
+========Media Query 575px==========
+================================ */
+@media (max-width: 575px) {
+  /* Common CSS Part Start */
+  .container {
+    max-width: 575px;
+  }
+  /* Common CSS Part End */
+  /* Navbar CSS Part Start */
+  #main-menu .navbar .navbar-brand img {
+    transform: scale(0.7);
+    padding: 0px 0px 0px 0px;
+  }
+  /* Navbar CSS Part End */
+  /* Banner CSS Part Start */
+  #banner-wrapper {
+    padding-top: 180px;
+    padding-bottom: 60px;
+  }
+  #banner-wrapper .banner-content-wrapper .banner-image {
+    order: 1;
+  }
+  #banner-wrapper .banner-content-wrapper .banner-text {
+    order: 2;
+    margin-top: 24px;
+  }
+  #banner-wrapper .banner-text h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  /* Banner CSS Part End */
+  /* Services CSS Part Start */
+  #service-wrapper {
+    padding-top: 12px;
+    padding-bottom: 40px;
+  }
+  #service-wrapper .service-item .service-item-card p {
+    display: none;
+  }
+  #service-wrapper .service-item .service-item-card {
+    padding: 22px;
+    overflow: hidden;
+    text-align: center;
+  }
+  #service-wrapper .service-item .service-item-card img {
+    width: 36px;
+  }
+  #service-wrapper .service-item .service-item-card h5 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #service-wrapper .service-item-head .service-item-card h5 {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+  #service-wrapper .service-item-head .service-item-card h3 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 300;
+  }
+  /* Services CSS Part End */
+  /* About CSS Part Start */
+  #about-wrapper .about-content-wrapper .about-content {
+    order: 2 !important;
+    margin-top: 24px !important;
+  }
+  #about-wrapper .about-content-wrapper .about-image {
+    order: 1 !important;
+  }
+  #about-wrapper .about-content h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  #about-wrapper .about-content p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 28px;
+  }
+  #about-wrapper .about-content h5 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+  #about-wrapper .about-content .high-quality {
+    margin-bottom: 28px;
+  }
+  /* About CSS Part End */
+  /* Expert CSS Part Start */
+  #expert-wrapper {
+    padding-top: 32px;
+  }
+  #expert-wrapper .expert-title h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  #expert-wrapper
+    .expert-slider-main
+    .expert-slide-item
+    .expert-member-title
+    hr,
+  #expert-wrapper
+    .expert-slider-main
+    .expert-slide-item
+    .expert-member-description
+    p {
+    display: none;
+  }
+  #expert-wrapper .left,
+  #expert-wrapper .right {
+    display: none;
+  }
+  #expert-wrapper .expert-slider-area {
+    padding: 0 10px;
+  }
+  #expert-wrapper .expert-slider-wrapper {
+    position: relative;
+  }
+  #expert-wrapper .expert-slider-wrapper ul {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+    display: flex;
+  }
+  #expert-wrapper .expert-slider-wrapper ul li {
+    margin-right: 15px;
+  }
+  #expert-wrapper .expert-slider-wrapper ul li button {
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid var(--bg-secondary-color);
+    transition: all linear 0.4s;
+  }
+  #expert-wrapper .expert-slider-wrapper ul li button:hover {
+    background-color: var(--bg-secondary-color);
+  }
+  #expert-wrapper .expert-slider-wrapper ul .slick-active button {
+    background-color: var(--bg-secondary-color);
+  }
+  #expert-wrapper .expert-slider-wrapper .expert-slide-item {
+    padding: 12px;
+  }
+  #expert-wrapper
+    .expert-slider-wrapper
+    .expert-slide-item
+    .expert-member-image
+    img {
+    margin-bottom: 0px;
+  }
+  #expert-wrapper
+    .expert-slider-wrapper
+    .expert-slide-item
+    .expert-member-title
+    h4 {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+  #expert-wrapper
+  .expert-slider-wrapper
+  .expert-slide-item
+  .expert-member-title
+  h5 {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 300;
 }
-/* Media Query 490px */
-@media (max-width: 490px) {
-    /* About CSS Part Start */
-    
-    /* About CSS Part End */
-    /* Portfolio CSS Part Start */
-    
-    /* Portfolio CSS Part End */
+  /* Expert CSS Part End */
+  /* Footer CSS Part Start */
+  #footer-wrapper .footer-main-content {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  #footer-wrapper .footer-main-content .footer-about {
+    margin: 24px 0;
+  }
+  /* Footer CSS Part End */
 }

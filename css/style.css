@@ -6,648 +6,854 @@
 5.   Footer
  ---------------------- */
 
-
 /* General Part CSS Start */
 /* Google Fonts Bai Jamjuree*/
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap");
 /* Common CSS Part Start */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-ul, ol {
-    list-style: none;
-    padding-left: 0;
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
 }
 a {
-    text-decoration: none;
-    display: inline-block;
+  text-decoration: none;
+  display: inline-block;
 }
-.container {
+/* .container {
     width: 1620px !important;
-}
+} */
 :root {
-    /* Background Color */
-    --bg-primary-color: #6Dc49C;
-    --bg-secondary-color: #4792CF;
-    --bg-white: #ffffff;
-    --bg-gray: #f5f5f5;
+  /* Background Color */
+  --bg-primary-color: #6dc49c;
+  --bg-secondary-color: #4792cf;
+  --bg-white: #ffffff;
+  --bg-gray: #f5f5f5;
 
-    /* Text Colors */
-    --text-primary-color: #555555;
-    --text-white: #ffffff;
-    --text-blue: #4792CF;
-    --text-dark-color: #404040;
+  /* Text Colors */
+  --text-primary-color: #555555;
+  --text-white: #ffffff;
+  --text-blue: #4792cf;
+  --text-dark-color: #404040;
 }
 body {
-    font-family: 'Bai Jamjuree', sans-serif;
-    background-color: var(--bg-white);
+  font-family: "Bai Jamjuree", sans-serif;
+  background-color: var(--bg-white);
 }
 p {
-    margin: 0;
+  margin: 0;
 }
 /* Common CSS Part End */
 /* Custom CSS Part Start */
 
 /* General Part CSS End */
 
-
 /* ===========================
 Home Page CSS
 =========================== */
 /* NavBar CSS Part Start */
 #main-menu {
-    background-color: transparent !important;
-    position: absolute;
-    width: 100%;
+  background-color: transparent !important;
+  position: absolute;
+  width: 100%;
 }
 .navbar-expand-lg {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
-#main-menu .left-menu .nav-item .nav-link,
-#main-menu .right-menu ul li button {
-    font-size: 20px;
-    line-height: 27px;
-    color: var(--text-white);
-    font-weight: 300;
-    border: none;
-    padding: 8px 19px 9px 18px;
-    background-color: transparent;
-    transition: all linear 0.4s;
+#main-menu .navbar .navbar-brand img {
+  padding: 15px 30px 15px 45px;
 }
-#main-menu .right-menu ul li button a {
-    color: var(--text-white);
+/* #main-menu .left-menu .nav-item,
+#main-menu .right-menu ul li {
+  padding: 8px 10px 9px 10px;
+} */
+#main-menu .left-menu .nav-item .nav-link {
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--text-white);
+  font-weight: 300;
+  border: none;
+  background-color: transparent;
+  transition: all linear 0.4s;
 }
-#main-menu .left-menu .nav-item .nav-link:hover,
-#main-menu .right-menu ul li button:hover {
-    background-color: var(--bg-primary-color);
-    border-radius: 4px;
-    /* font-weight: 500; */
+#main-menu .left-menu .nav-item a {
+  position: relative;
+}
+#main-menu .left-menu .nav-item a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: var(--bg-white);
+  height: 3px;
+  transition: all linear 0.4s;
+}
+#main-menu .left-menu .nav-item:hover a::after {
+  width: 100%;
 }
 /* NavBar CSS Part End */
 /* Banner CSS Part Start */
 #banner-wrapper {
-    background: linear-gradient(to left, var(--bg-secondary-color), var(--bg-primary-color));
-    padding-top: 283px;
-    padding-bottom: 145px;
+  background: linear-gradient(
+    to left,
+    var(--bg-secondary-color),
+    var(--bg-primary-color)
+  );
+  padding-top: 283px;
+  padding-bottom: 145px;
 }
 #banner-wrapper .banner-text {
-    margin-right: 82px;
+  margin-right: 82px;
 }
 #banner-wrapper .banner-text h1 {
-    font-size: 60px;
-    font-weight: 300;
-    line-height: 80px;
-    color: var(--text-white);
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 80px;
+  color: var(--text-white);
 }
 #banner-wrapper .banner-text p {
-    font-size: 20px;
-    line-height: 27px;
-    font-weight: 300;
-    color: var(--text-white);
-    height: 88px;
-    overflow: hidden;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 300;
+  color: var(--text-white);
+  height: 88px;
+  overflow: hidden;
 }
 #banner-wrapper .banner-text button {
-    font-size: 20px;
-    line-height: 27px;
-    font-weight: 300;
-    border: 1px solid var(--bg-white);
-    padding: 8px 19px 9px 18px;
-    background-color: transparent;
-    transition: all linear 0.4s;
-    margin-top: 18px;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 500;
+  border: 1px solid var(--bg-secondary-color);
+  border-radius: 4px;
+  padding: 8px 19px 9px 18px;
+  background-color: var(--bg-secondary-color);
+  transition: all linear 0.4s;
+  margin-top: 18px;
 }
 #banner-wrapper .banner-text button:hover {
-    background-color: var(--bg-secondary-color);
-    border-radius: 4px;
-    border: 1px solid var(--bg-secondary-color);
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid var(--bg-white);
 }
 #banner-wrapper .banner-text button a {
-    color: var(--text-white);
+  color: var(--text-white);
 }
 /* Banner CSS Part End */
 /* Services CSS Part End */
 #service-wrapper {
-    background: var(--bg-gray);
-    padding: 154px 0;
+  background: var(--bg-gray);
+  padding: 72px 0;
 }
 #service-wrapper .service-item-head .service-item-card {
-    padding: 37px 35px 41px 36px;
+  padding: 37px 35px 41px 36px;
 }
 #service-wrapper .service-item-head .service-item-card h5 {
-    font-size: 18px;
-    line-height: 24px;
-    color: var(--text-blue);
-    text-transform: uppercase;
-    font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--text-blue);
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all linear 0.4s;
 }
 #service-wrapper .service-item-head .service-item-card h3 {
-    font-size: 46px;
-    line-height: 62px;
-    color: var(--text-primary-color);
-    font-weight: 300;
+  font-size: 46px;
+  line-height: 62px;
+  color: var(--text-primary-color);
+  font-weight: 300;
+  transition: all linear 0.4s;
 }
 #service-wrapper .service-item-head .service-item-card p {
-    font-size: 16px;
-    line-height: 21px;
-    color: var(--text-primary-color);
-    font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--text-primary-color);
+  font-weight: 300;
+  transition: all linear 0.4s;
 }
 #service-wrapper .service-item .service-item-card {
-    padding: 37px 35px 41px 36px;
-    background-color: #EBEBEB;
+  padding: 37px 35px 41px 36px;
+  background-color: #ebebeb;
+  transition: all linear 0.4s;
+}
+#service-wrapper .service-item .service-item-card:hover {
+  background: linear-gradient(to left, var(--bg-secondary-color), var(--bg-primary-color));
+}
+#service-wrapper .service-item .service-item-card:hover h5 {
+  color: var(--text-white);
 }
 #service-wrapper .service-item .service-item-card img {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
-#service-wrapper .service-item .service-item-card h3 {
-    font-size: 20px;
-    line-height: 27px;
-    color: var(--text-primary-color);
-    font-weight: 300;
-    margin-bottom: 10px;
+#service-wrapper .service-item .service-item-card h5 {
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--text-dark-color);
+  font-weight: 500;
+  margin-bottom: 10px;
+  transition: all linear 0.4s;
 }
 #service-wrapper .service-item .service-item-card p {
-    font-size: 16px;
-    line-height: 21px;
-    color: var(--text-primary-color);
-    font-weight: 300;
-    height: 88px;
-    overflow: hidden;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--text-primary-color);
+  font-weight: 300;
+  height: 88px;
+  overflow: hidden;
+  transition: all linear 0.4s;
+}
+#service-wrapper .service-item .service-item-card:hover p {
+  color: var(--text-white);
 }
 /* Services CSS Part End */
 /* About CSS Part Start */
 #about-wrapper {
-    padding-top: 123px;
-    padding-bottom: 139px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 #about-wrapper .about-content h3 {
-    font-size: 36px;
-    line-height: 48px;
-    color: var(--text-blue);
-    font-weight: 400;
-    margin-bottom: 24px;
+  font-size: 36px;
+  line-height: 48px;
+  color: var(--text-blue);
+  font-weight: 400;
+  margin-bottom: 24px;
 }
 #about-wrapper .about-content p {
-    font-size: 20px;
-    line-height: 27px;
-    font-weight: 300;
-    color: var(--text-primary-color);
-    margin-bottom: 35px;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 300;
+  color: var(--text-primary-color);
+  margin-bottom: 35px;
 }
 #about-wrapper .about-content h5 {
-    font-size: 20px;
-    line-height: 27px;
-    font-weight: 500;
-    color: var(--text-primary-color);
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 500;
+  color: var(--text-primary-color);
 }
 #about-wrapper .about-content .high-quality {
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 #about-wrapper .about-image {
-    margin-left: 50px;
-    position: relative;
+  margin-left: 50px;
+  position: relative;
 }
 #about-wrapper .about-image img {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 #about-wrapper .about-image .video-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* About CSS Part End */
 /* Expert CSS Part Start */
 #expert-wrapper {
-    background-color: var(--bg-gray);
-    padding-top: 83px;
-    padding-bottom: 156px;
+  background-color: var(--bg-gray);
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 #expert-wrapper .expert-title {
-    text-align: center;
+  text-align: center;
 }
 #expert-wrapper .expert-title h3 {
-    font-size: 36px;
-    line-height: 48px;
-    color: var(--text-blue);
-    font-weight: 400;
-    margin-bottom: 60px;
+  font-size: 36px;
+  line-height: 48px;
+  color: var(--text-blue);
+  font-weight: 400;
+  margin-bottom: 60px;
 }
 #expert-wrapper .expert-slider-wrapper .expert-slide-item {
-    background-color: var(--bg-white);
-    margin: 0 10px;
-    padding: 36px 32px 32px 32px;
-    text-align: center;
-    border-radius: 7px;
+  background-color: var(--bg-white);
+  margin: 0 10px;
+  padding: 36px 32px 32px 32px;
+  text-align: center;
+  border-radius: 7px;
+  transition: all linear 0.4s;
+}
+#expert-wrapper .expert-slider-wrapper .expert-slide-item:hover {
+  background: linear-gradient(to left, var(--bg-secondary-color), var(--bg-primary-color));
+  cursor: pointer;
 }
 #expert-wrapper .expert-slider-wrapper .expert-slide-item .expert-member-image {
-    display: inline-block;
-    margin: 0 auto;
+  display: inline-block;
+  margin: 0 auto;
 }
-#expert-wrapper .expert-slider-wrapper .expert-slide-item .expert-member-image img {
-    margin-bottom: 23px;
+#expert-wrapper
+  .expert-slider-wrapper
+  .expert-slide-item
+  .expert-member-image
+  img {
+  margin-bottom: 23px;
 }
-#expert-wrapper .expert-slider-wrapper .expert-slide-item .expert-member-title h4 {
-    font-size: 20px;
-    line-height: 27px;
-    color: var(--text-dark-color);
-    text-transform: uppercase;
-    font-weight: 500;
+#expert-wrapper
+  .expert-slider-wrapper
+  .expert-slide-item
+  .expert-member-title
+  h4 {
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--text-dark-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all linear 0.4s;
 }
-#expert-wrapper .expert-slider-wrapper .expert-slide-item .expert-member-title h5 {
-    font-size: 15px;
-    line-height: 20px;
-    color: var(--text-dark-color);
-    text-transform: capitalize;
-    font-weight: 500;
-    opacity: 35%;
+#expert-wrapper
+  .expert-slider-wrapper
+  .expert-slide-item:hover
+  .expert-member-title
+  h4 {
+    color: var(--text-white);
+  }
+#expert-wrapper
+  .expert-slider-wrapper
+  .expert-slide-item
+  .expert-member-title
+  h5 {
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--text-dark-color);
+  text-transform: capitalize;
+  font-weight: 500;
+  opacity: 35%;
+  transition: all linear 0.4s;
 }
-#expert-wrapper .expert-slider-wrapper .expert-slide-item .expert-member-title hr {
-    margin: 1rem auto;
-    color: inherit;
-    border: 0;
-    border-top: var(--bs-border-width) solid;
-    opacity: .15;
-    width: 75%;
+#expert-wrapper
+  .expert-slider-wrapper
+  .expert-slide-item:hover
+  .expert-member-title
+  h5 {
+    color: var(--text-white);
+    opacity: 75%;
+  }
+#expert-wrapper
+  .expert-slider-wrapper
+  .expert-slide-item
+  .expert-member-title
+  hr {
+  margin: 1rem auto;
+  color: inherit;
+  border: 0;
+  border-top: var(--bs-border-width) solid;
+  opacity: 0.15;
+  width: 75%;
 }
-#expert-wrapper .expert-slider-wrapper .expert-slide-item .expert-member-description p {
-    font-size: 15px;
-    line-height: 20px;
-    color: var(--text-dark-color);
-    font-weight: 300;
-    height: 62px;
-    overflow: hidden;
+#expert-wrapper
+  .expert-slider-wrapper
+  .expert-slide-item:hover
+  .expert-member-title
+  hr {
+    color: var(--bg-white);
+    opacity: 0.3;
+  }
+#expert-wrapper
+  .expert-slider-wrapper
+  .expert-slide-item
+  .expert-member-description
+  p {
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--text-dark-color);
+  font-weight: 300;
+  height: 62px;
+  overflow: hidden;
 }
-#expert-wrapper .expert-slider-area{
-    padding: 0 50px;
+#expert-wrapper
+  .expert-slider-wrapper
+  .expert-slide-item:hover
+  .expert-member-description
+  p {
+    color: var(--text-white);
+  }
+#expert-wrapper .expert-slider-area {
+  padding: 0 50px;
 }
-#expert-wrapper .expert-slider-main{
-    position: relative;
+#expert-wrapper .expert-slider-main {
+  position: relative;
 }
-#expert-wrapper .left{
-    position: absolute;
-    top: 50%;
-    left: -50px;
-    transform: translateY(-50%);
-    color: #010002;
-    font-size: 33px;
+#expert-wrapper .left {
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+  color: var(--text-blue);
+  font-size: 22px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--bg-secondary-color);
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: all linear 0.4s;
 }
-#expert-wrapper .right{
-    position: absolute;
-    top: 50%;
-    right: -50px;
-    transform: translateY(-50%);
-    color: #010002;
-    font-size: 33px;
+#expert-wrapper .left:hover {
+  color: var(--text-white);
+  border: var(--bg-secondary-color);
+  background-color: var(--bg-secondary-color);
+}
+#expert-wrapper .right {
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+  color: var(--text-blue);
+  font-size: 22px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--bg-secondary-color);
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: all linear 0.4s;
+}
+#expert-wrapper .right:hover {
+  color: var(--text-white);
+  border: var(--bg-secondary-color);
+  background-color: var(--bg-secondary-color);
 }
 /* Expert CSS Part End */
 /* Footer CSS Part Start */
 #footer-wrapper .footer-logo img {
-    margin: 0 auto;
-    padding: 24px 0;
+  margin: 0 auto;
 }
 #footer-wrapper .footer-main-content {
-    background-color: var(--bg-primary-color);
-    padding-top: 154px;
-    padding-bottom: 196px;
+  background-color: var(--bg-primary-color);
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
 #footer-wrapper .footer-main-content .footer-head-office h5 {
-    font-size: 20px;
-    color: var(--text-white);
-    line-height: 30px;
-    font-weight: 500;
-    /* margin: 0; */
+  font-size: 20px;
+  color: var(--text-white);
+  line-height: 30px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  position: relative;
+}
+#footer-wrapper .footer-main-content .footer-head-office h5::after {
+  content: "";
+  position: absolute;
+  width: 72px;
+  height: 3px;
+  background-color: var(--bg-white);
+  bottom: 0;
+  left: 0;
 }
 #footer-wrapper .footer-main-content .footer-head-office ul li p {
-    font-size: 20px;
-    color: var(--text-white);
-    line-height: 30px;
-    font-weight: 300;
+  font-size: 20px;
+  color: var(--text-white);
+  line-height: 30px;
+  font-weight: 300;
 }
 #footer-wrapper .footer-main-content .footer-head-office ul li i {
-    font-size: 20px;
-    color: var(--text-white);
-    line-height: 30px;
-    padding-right: 25px;
+  font-size: 20px;
+  color: var(--text-white);
+  line-height: 30px;
+  padding-right: 25px;
 }
 #footer-wrapper .footer-main-content .footer-about h5 {
-    font-size: 20px;
-    color: var(--text-white);
-    line-height: 30px;
-    font-weight: 500;
+  font-size: 20px;
+  color: var(--text-white);
+  line-height: 30px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  position: relative;
+}
+#footer-wrapper .footer-main-content .footer-about h5::after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 3px;
+  background-color: var(--bg-white);
+  bottom: 0;
+  left: 0;
 }
 #footer-wrapper .footer-main-content .footer-about ul li a {
-    font-size: 20px;
-    color: var(--text-white);
-    line-height: 30px;
-    font-weight: 300;
+  font-size: 20px;
+  color: var(--text-white);
+  line-height: 30px;
+  font-weight: 300;
+  position: relative;
+  margin-top: 5px;
+}
+#footer-wrapper .footer-main-content .footer-about ul li a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: var(--bg-white);
+  height: 3px;
+  transition: all linear 0.4s;
+}
+#footer-wrapper .footer-main-content .footer-about ul li a:hover::after {
+  width: 100%;
 }
 #footer-wrapper .footer-main-content .footer-social-media h5 {
-    font-size: 20px;
-    color: var(--text-white);
-    line-height: 30px;
-    font-weight: 500;
+  font-size: 20px;
+  color: var(--text-white);
+  line-height: 30px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  position: relative;
 }
-#footer-wrapper .footer-main-content .footer-social-media ul li i {
-    font-size: 20px;
-    color: var(--text-white);
-    line-height: 30px;
-    padding-right: 25px;
+#footer-wrapper .footer-main-content .footer-social-media h5::after {
+  content: "";
+  position: absolute;
+  width: 72px;
+  height: 3px;
+  background-color: var(--bg-white);
+  bottom: 0;
+  left: 0;
+}
+#footer-wrapper .footer-main-content .footer-social-media ul li {
+  margin-top: 5px;
+  cursor: pointer;
 }
 #footer-wrapper .footer-main-content .footer-social-media ul li p {
-    font-size: 20px;
-    color: var(--text-white);
-    line-height: 30px;
-    font-weight: 300;
+  position: relative;
+}
+#footer-wrapper .footer-main-content .footer-social-media ul li p::after {
+  content: ".";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  color: transparent;
+  background-color: var(--bg-white);
+  height: 3px;
+  transition: all linear 0.4s;
+}
+#footer-wrapper .footer-main-content .footer-social-media ul li:hover p::after {
+  width: 100%;
+}
+#footer-wrapper .footer-main-content .footer-social-media ul li i {
+  font-size: 20px;
+  color: var(--text-white);
+  line-height: 30px;
+  padding-right: 20px;
+}
+#footer-wrapper .footer-main-content .footer-social-media ul li p {
+  font-size: 20px;
+  color: var(--text-white);
+  line-height: 30px;
+  font-weight: 300;
 }
 #footer-wrapper .footer-copyright {
-    background-color: var(--bg-gray);
-    padding-top: 10px;
-    padding-bottom: 15px;
+  background-color: var(--bg-gray);
+  padding: 7px 0;
+}
+#footer-wrapper .footer-copyright .footer-copyright-text {
+  text-align: center;
+  padding-left: 0 !important;
 }
 #footer-wrapper .footer-copyright .footer-copyright-text p {
-    font-size: 20px;
-    color: var(--text-primary-color);
-    line-height: 30px;
-    font-weight: 300;
+  font-size: 14px;
+  color: var(--text-primary-color);
+  line-height: 18px;
+  font-weight: 200;
 }
 /* Footer CSS Part End */
-
 
 /* ===========================
 About Page CSS
 =========================== */
 /* Banner CSS Part Start */
 #about-banner-wrapper {
-    padding-top: 345px;
-    padding-bottom: 255px;
-    background: linear-gradient(to left, var(--bg-secondary-color), var(--bg-primary-color));
+  padding-top: 345px;
+  padding-bottom: 255px;
+  background: linear-gradient(
+    to left,
+    var(--bg-secondary-color),
+    var(--bg-primary-color)
+  );
 }
 #about-banner-wrapper .about-banner-text h3 {
-    font-size: 36px;
-    font-weight: 300;
-    color: var(--text-white);
-    text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 300;
+  color: var(--text-white);
+  text-transform: uppercase;
 }
 /* Banner CSS Part End */
 /* About CSS Part Start */
 #about-page-about-wrapper {
-    background-color: var(--bg-gray);
-    padding-top: 140px;
-    padding-bottom: 192px;
+  background-color: var(--bg-gray);
+  padding-top: 140px;
+  padding-bottom: 192px;
 }
 #about-page-about-wrapper .about-page-about-content-wrapper {
-    padding-left: 180px;
-    padding-right: 180px;
+  padding-left: 180px;
+  padding-right: 180px;
 }
-#about-page-about-wrapper .about-page-about-content-wrapper .about-page-about-content {
-    margin-bottom: 33px;
+#about-page-about-wrapper
+  .about-page-about-content-wrapper
+  .about-page-about-content {
+  margin-bottom: 33px;
 }
-#about-page-about-wrapper .about-page-about-content-wrapper .about-page-about-content h3 {
-    font-size: 36px;
-    font-weight: 300;
-    color: var(--text-blue);
-    line-height: 48px;
-    margin-bottom: 26px;
+#about-page-about-wrapper
+  .about-page-about-content-wrapper
+  .about-page-about-content
+  h3 {
+  font-size: 36px;
+  font-weight: 300;
+  color: var(--text-blue);
+  line-height: 48px;
+  margin-bottom: 26px;
 }
-#about-page-about-wrapper .about-page-about-content-wrapper .about-page-about-content p {
-    font-size: 20px;
-    font-weight: 300;
-    color: var(--text-primary-color);
-    line-height: 27px;
-    padding-bottom: 26px;
+#about-page-about-wrapper
+  .about-page-about-content-wrapper
+  .about-page-about-content
+  p {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--text-primary-color);
+  line-height: 27px;
+  padding-bottom: 26px;
 }
 /* About CSS Part End */
-
 
 /* ===========================
 Contact Page CSS
 =========================== */
 /* Conatct Text Image Part CSS Start */
 #contact-us-wrapper {
-    background-color: var(--bg-gray);
-    padding-top: 155px;
-    padding-bottom: 171px;
+  background-color: var(--bg-gray);
+  padding-top: 155px;
+  padding-bottom: 171px;
 }
 #contact-us-wrapper .contact-us-text-image .contact-footer-head-office h5 {
-    font-size: 20px;
-    color: var(--text-primary-color);
-    line-height: 30px;
-    font-weight: 500;
+  font-size: 20px;
+  color: var(--text-primary-color);
+  line-height: 30px;
+  font-weight: 500;
 }
 #contact-us-wrapper .contact-us-text-image .contact-footer-head-office ul li p {
-    font-size: 20px;
-    color: var(--text-primary-color);
-    line-height: 30px;
-    font-weight: 300;
+  font-size: 20px;
+  color: var(--text-primary-color);
+  line-height: 30px;
+  font-weight: 300;
 }
 #contact-us-wrapper .contact-us-text-image .contact-footer-head-office ul li i {
-    font-size: 20px;
-    color: var(--text-primary-color);
-    line-height: 30px;
-    padding-right: 25px;
+  font-size: 20px;
+  color: var(--text-primary-color);
+  line-height: 30px;
+  padding-right: 25px;
 }
 #contact-us-wrapper .contact-form-title {
-    text-align: center;
+  text-align: center;
 }
 #contact-us-wrapper .contact-form-title h1 {
-    font-size: 36px;
-    line-height: 48px;
-    color: var(--text-blue);
-    font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: var(--text-blue);
+  font-weight: 700;
 }
 #contact-us-wrapper .contact-form-title p {
-    font-size: 20px;
-    line-height: 27px;
-    color: var(--text-primary-color);
-    font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--text-primary-color);
+  font-weight: 400;
 }
 #contact-us-wrapper form {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 #contact-us-wrapper .contact-form-input .form-control {
-    font-size: 20px;
-    line-height: 27px;
-    background-color: #ebebeb;
-    padding: 11px 0 18px 34px;
-    margin-bottom: 42px;
+  font-size: 20px;
+  line-height: 27px;
+  background-color: #ebebeb;
+  padding: 11px 0 18px 34px;
+  margin-bottom: 42px;
 }
 #contact-us-wrapper .contact-form-input .form-control::placeholder {
-    color: var(--text-primary-color);
+  color: var(--text-primary-color);
 }
 /* #contact-us-wrapper .contact-form-input input:focus {
     outline: none !important;
     border: none !important;
 } */
 #contact-us-wrapper .contact-form-input textarea {
-    padding: 11px 0 18px 34px;
-    width: 100%;
-    border: none;
-    background-color: #ebebeb;
-    font-size: 20px;
-    line-height: 27px;
-    font-weight: 400;
+  padding: 11px 0 18px 34px;
+  width: 100%;
+  border: none;
+  background-color: #ebebeb;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
 }
 #contact-us-wrapper .contact-form-input textarea:focus {
-    outline: none;
-    border: none;
+  outline: none;
+  border: none;
 }
 #contact-us-wrapper .contact-form-input textarea::placeholder {
-    color: #b2b2b2;
+  color: #b2b2b2;
 }
 #contact-us-wrapper .contact-form-input .send-button {
-    width: 100%;
-    padding: 12px 0 17px;
-    font-size: 20px;
-    line-height: 27px;
-    color: var(--text-white);
-    background-color: var(--bg-primary-color);
-    border-radius: 10px;
-    margin-top: 35px;
-    border: 1px solid var(--bg-primary-color);
-    transition: all linear 0.4s;
+  width: 100%;
+  padding: 12px 0 17px;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--text-white);
+  background-color: var(--bg-primary-color);
+  border-radius: 10px;
+  margin-top: 35px;
+  border: 1px solid var(--bg-primary-color);
+  transition: all linear 0.4s;
 }
 #contact-us-wrapper .contact-form-input .send-button:hover {
-    color: var(--text-blue);
-    background-color: transparent;
-    border: 1px solid var(--bg-secondary-color);
+  color: var(--text-blue);
+  background-color: transparent;
+  border: 1px solid var(--bg-secondary-color);
 }
 /* Conatct Text Image Part CSS End */
-
 
 /* ===========================
 Login Page CSS
 =========================== */
 /* Login Part CSS Start */
 #login-wrapper {
-    background-color: var(--bg-gray);
-    padding-top: 280px;
-    padding-bottom: 264px;
+  background-color: var(--bg-gray);
+  padding-top: 280px;
+  padding-bottom: 264px;
 }
 #login-wrapper .login-form .login-form-title {
-    text-align: center;
+  text-align: center;
 }
 #login-wrapper .login-form .login-form-title h1 {
-    font-size: 38px;
-    line-height: 51px;
-    color: var(--text-blue);
-    font-weight: 500;
+  font-size: 38px;
+  line-height: 51px;
+  color: var(--text-blue);
+  font-weight: 500;
 }
 #login-wrapper .login-form .login-form-title p {
-    font-size: 21px;
-    line-height: 28px;
-    color: var(--text-primary-color);
-    margin-bottom: 40px;
-    font-weight: 400;
+  font-size: 21px;
+  line-height: 28px;
+  color: var(--text-primary-color);
+  margin-bottom: 40px;
+  font-weight: 400;
 }
 #login-wrapper .login-form .login-form-input input {
-    padding: 12px 0 22px 38px;
-    background-color: #ebebeb;
-    border-radius: 10px;
-    width: 100%;
-    margin-bottom: 31px;
+  padding: 12px 0 22px 38px;
+  background-color: #ebebeb;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 31px;
+  border: 1px solid transparent;
+  outline: none;
+}
+#login-wrapper .login-form .login-form-input input:focus {
+  border: none !important;
+  outline: none !important;
 }
 #login-wrapper .login-form .login-form-input .login-button {
-    width: 100%;
-    padding: 13px 0 20px;
-    background-color: var(--bg-primary-color);
-    border: 1px solid var(--bg-primary-color);
-    font-size: 21px;
-    line-height: 28px;
-    font-weight: 500;
-    margin-bottom: 25px;
+  width: 100%;
+  padding: 13px 0 20px;
+  background-color: var(--bg-primary-color);
+  border: 1px solid var(--bg-primary-color);
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 500;
+  margin-bottom: 25px;
 }
 #login-wrapper .login-form .login-form-input .facebook-button {
-    width: 100%;
-    padding: 13px 0 20px;
-    background-color: #367FC0;
-    border: 1px solid #367FC0;
-    font-size: 21px;
-    line-height: 28px;
-    font-weight: 300;
-    margin-bottom: 25px;
+  width: 100%;
+  padding: 13px 0 20px;
+  background-color: #367fc0;
+  border: 1px solid #367fc0;
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 300;
+  margin-bottom: 25px;
 }
 #login-wrapper .login-form .login-form-input .google-button {
-    width: 100%;
-    padding: 13px 0 20px;
-    background-color: #DD4B39;
-    border: 1px solid #DD4B39;
-    font-size: 21px;
-    line-height: 28px;
-    font-weight: 300;
-    margin-bottom: 90px;
+  width: 100%;
+  padding: 13px 0 20px;
+  background-color: #dd4b39;
+  border: 1px solid #dd4b39;
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 300;
+  margin-bottom: 90px;
 }
 #login-wrapper .login-form .login-form-input .facebook-icon,
 #login-wrapper .login-form .login-form-input .google-icon {
-    font-size: 18px;
-    margin-right: 24px;
+  font-size: 18px;
+  margin-right: 24px;
 }
 #login-wrapper .login-form .login-form-input .forgot-pass {
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: 500;
-    color: #7C7D7E;
-    margin-bottom: 54px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  color: #7c7d7e;
+  margin-bottom: 54px;
 }
 #login-wrapper .login-form .login-form-input .login-with {
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: 500;
-    color: #7C7D7E;
-    margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  color: #7c7d7e;
+  margin-bottom: 30px;
 }
 #login-wrapper .login-form .login-form-input .sign-up-link {
-    position: relative;
+  position: relative;
 }
 #login-wrapper .login-form .login-form-input .sign-up-link:after {
-    content: '';
-    width: 130px;
-    height: 5px;
-    border-radius: 5px;
-    background-color: var(--bg-secondary-color);
-    position: absolute;
-    left: 50%;
-    bottom: -28px;
-    transform: translateX(-50%);
+  content: "";
+  width: 130px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: var(--bg-secondary-color);
+  position: absolute;
+  left: 50%;
+  bottom: -28px;
+  transform: translateX(-50%);
 }
 /* Login Part CSS End */
-
 
 /* ===========================
 Login Page CSS
 =========================== */
 #expert-wrapper .expert-detail-upper h4 {
-    font-size: 36px;
-    line-height: 48px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: var(--text-blue);
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--text-blue);
 }
 #expert-wrapper .expert-detail-upper h5 {
-    font-size: 20px;
-    line-height: 27px;
-    font-weight: 400;
-    text-transform: capitalize;
-    color: var(--text-primary-color);
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: var(--text-primary-color);
 }
 #expert-wrapper .expert-detail-social-icon i {
-    font-size: 22px;
-    margin-right: 12px;
-    color: var(--text-primary-color);
+  font-size: 22px;
+  margin-right: 12px;
+  color: var(--text-primary-color);
 }
 #expert-wrapper .expert-detail-lower {
-    margin-top: 47px;
-    margin-bottom: 100px;
-    height: 130px;
-    overflow: hidden;
+  margin-top: 47px;
+  margin-bottom: 100px;
+  height: 130px;
+  overflow: hidden;
 }
-#expert-wrapper .expert-detail-lower p{
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: 300;
-    color: var(--text-primary-color);
-    text-align: center;
+#expert-wrapper .expert-detail-lower p {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 300;
+  color: var(--text-primary-color);
+  text-align: center;
 }
