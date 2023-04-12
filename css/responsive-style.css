@@ -1,4 +1,14 @@
 /* ================================
+========Media Query 1400+px=========
+================================ */
+@media (min-width: 1400px) {
+  /* Services CSS Part Start */
+  #service-wrapper .service-item .service-item-card {
+    min-height: 330px;
+  }
+  /* Services CSS Part End */
+}
+/* ================================
 ========Media Query 1399px=========
 ================================ */
 @media (max-width: 1399px) {
@@ -19,6 +29,11 @@
     padding: 8px 12px 9px 12px;
   }
   /* Navbar CSS Part End */
+  /* Services CSS Part Start */
+  #service-wrapper .service-item .service-item-card {
+    min-height: 330px;
+  }
+  /* Services CSS Part End */
   /* Expart CSS Part Start */
   #expert-wrapper .expert-slider-main .left {
     left: -25px;
@@ -55,6 +70,9 @@
   }
   /* Banner CSS Part End */
   /* Services CSS Part Start */
+  #service-wrapper .service-item .service-item-card {
+    min-height: 355px;
+  }
   #service-wrapper .service-item-head .service-item-card p {
     height: 108px;
     overflow: hidden;
@@ -101,7 +119,9 @@
   }
   /* Banner CSS Part End */
   /* Services CSS Part End */
-
+  #service-wrapper .service-item .service-item-card {
+    min-height: 330px;
+  }
   /* Services CSS Part End */
 }
 /* ================================
@@ -119,6 +139,11 @@
     padding: 10px 20px 10px 20px;
   }
   /* Navbar CSS Part End */
+  /* Services CSS Part Start */
+  #service-wrapper .service-item .service-item-card {
+    min-height: 355px;
+  }
+  /* Services CSS Part End */
   /* About CSS Part Start */
   #about-wrapper .about-content-wrapper .about-image .video-icon img {
     width: 75px;
@@ -163,13 +188,14 @@
     padding-top: 12px;
     padding-bottom: 40px;
   }
-  #service-wrapper .service-item .service-item-card p {
-    display: none;
-  }
   #service-wrapper .service-item .service-item-card {
     padding: 22px;
     overflow: hidden;
     text-align: center;
+    min-height: 200px;
+  }
+  #service-wrapper .service-item .service-item-card p {
+    display: none;
   }
   #service-wrapper .service-item .service-item-card img {
     width: 36px;
