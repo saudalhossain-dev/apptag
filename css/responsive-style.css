@@ -338,23 +338,23 @@
   }
   /* Expert CSS Part End */
   /* Footer CSS Part Start */
-  #footer-wrapper .footer-logo img {
+  #footer-wrapper-big .footer-logo img {
     padding: 15px 0;
     transform: scale(0.8);
   }
-  #footer-wrapper .footer-main-content {
+  #footer-wrapper-big .footer-main-content {
     padding-left: 24px;
     padding-right: 24px;
   }
-  #footer-wrapper .footer-main-content .footer-head-office ul li p,
-  #footer-wrapper .footer-main-content .footer-head-office ul li i,
-  #footer-wrapper .footer-main-content .footer-about ul li a,
-  #footer-wrapper .footer-main-content .footer-social-media ul li p,
-  #footer-wrapper .footer-main-content .footer-social-media ul li i {
+  #footer-wrapper-big .footer-main-content .footer-head-office ul li p,
+  #footer-wrapper-big .footer-main-content .footer-head-office ul li i,
+  #footer-wrapper-big .footer-main-content .footer-about ul li a,
+  #footer-wrapper-big .footer-main-content .footer-social-media ul li p,
+  #footer-wrapper-big .footer-main-content .footer-social-media ul li i {
     font-size: 16px;
     line-height: 22px;
   }
-  #footer-wrapper .footer-main-content .footer-about {
+  #footer-wrapper-big .footer-main-content .footer-about {
     margin: 24px 0;
   }
   /* Footer CSS Part End */

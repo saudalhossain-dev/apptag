@@ -472,16 +472,16 @@ Home Page CSS
 }
 /* Expert CSS Part End */
 /* Footer CSS Part Start */
-#footer-wrapper .footer-logo img {
+#footer-wrapper-big .footer-logo img {
   margin: 0 auto;
   padding: 25px 0;
 }
-#footer-wrapper .footer-main-content {
+#footer-wrapper-big .footer-main-content {
   background-color: var(--bg-primary-color);
   padding-top: 36px;
   padding-bottom: 36px;
 }
-#footer-wrapper .footer-main-content .footer-head-office h5 {
+#footer-wrapper-big .footer-main-content .footer-head-office h5 {
   font-size: 20px;
   color: var(--text-white);
   line-height: 30px;
@@ -489,7 +489,7 @@ Home Page CSS
   margin-bottom: 18px;
   position: relative;
 }
-#footer-wrapper .footer-main-content .footer-head-office h5::after {
+#footer-wrapper-big .footer-main-content .footer-head-office h5::after {
   content: "";
   position: absolute;
   width: 72px;
@@ -498,19 +498,19 @@ Home Page CSS
   bottom: 0;
   left: 0;
 }
-#footer-wrapper .footer-main-content .footer-head-office ul li p {
+#footer-wrapper-big .footer-main-content .footer-head-office ul li p {
   font-size: 20px;
   color: var(--text-white);
   line-height: 30px;
   font-weight: 300;
 }
-#footer-wrapper .footer-main-content .footer-head-office ul li i {
+#footer-wrapper-big .footer-main-content .footer-head-office ul li i {
   font-size: 20px;
   color: var(--text-white);
   line-height: 30px;
   padding-right: 25px;
 }
-#footer-wrapper .footer-main-content .footer-about h5 {
+#footer-wrapper-big .footer-main-content .footer-about h5 {
   font-size: 20px;
   color: var(--text-white);
   line-height: 30px;
@@ -518,7 +518,7 @@ Home Page CSS
   margin-bottom: 18px;
   position: relative;
 }
-#footer-wrapper .footer-main-content .footer-about h5::after {
+#footer-wrapper-big .footer-main-content .footer-about h5::after {
   content: "";
   position: absolute;
   width: 48px;
@@ -527,7 +527,7 @@ Home Page CSS
   bottom: 0;
   left: 0;
 }
-#footer-wrapper .footer-main-content .footer-about ul li a {
+#footer-wrapper-big .footer-main-content .footer-about ul li a {
   font-size: 20px;
   color: var(--text-white);
   line-height: 30px;
@@ -535,7 +535,7 @@ Home Page CSS
   position: relative;
   margin-top: 5px;
 }
-#footer-wrapper .footer-main-content .footer-about ul li a::after {
+#footer-wrapper-big .footer-main-content .footer-about ul li a::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -548,10 +548,10 @@ Home Page CSS
   height: 3px;
   transition: all linear 0.4s;
 }
-#footer-wrapper .footer-main-content .footer-about ul li a:hover::after {
+#footer-wrapper-big .footer-main-content .footer-about ul li a:hover::after {
   width: 100%;
 }
-#footer-wrapper .footer-main-content .footer-social-media h5 {
+#footer-wrapper-big .footer-main-content .footer-social-media h5 {
   font-size: 20px;
   color: var(--text-white);
   line-height: 30px;
@@ -559,7 +559,7 @@ Home Page CSS
   margin-bottom: 18px;
   position: relative;
 }
-#footer-wrapper .footer-main-content .footer-social-media h5::after {
+#footer-wrapper-big .footer-main-content .footer-social-media h5::after {
   content: "";
   position: absolute;
   width: 72px;
@@ -568,14 +568,14 @@ Home Page CSS
   bottom: 0;
   left: 0;
 }
-#footer-wrapper .footer-main-content .footer-social-media ul li {
+#footer-wrapper-big .footer-main-content .footer-social-media ul li {
   margin-top: 5px;
   cursor: pointer;
 }
-#footer-wrapper .footer-main-content .footer-social-media ul li p {
+#footer-wrapper-big .footer-main-content .footer-social-media ul li p {
   position: relative;
 }
-#footer-wrapper .footer-main-content .footer-social-media ul li p::after {
+#footer-wrapper-big .footer-main-content .footer-social-media ul li p::after {
   content: ".";
   position: absolute;
   bottom: 0;
@@ -588,30 +588,30 @@ Home Page CSS
   height: 3px;
   transition: all linear 0.4s;
 }
-#footer-wrapper .footer-main-content .footer-social-media ul li:hover p::after {
+#footer-wrapper-big .footer-main-content .footer-social-media ul li:hover p::after {
   width: 100%;
 }
-#footer-wrapper .footer-main-content .footer-social-media ul li i {
+#footer-wrapper-big .footer-main-content .footer-social-media ul li i {
   font-size: 20px;
   color: var(--text-white);
   line-height: 30px;
   padding-right: 20px;
 }
-#footer-wrapper .footer-main-content .footer-social-media ul li p {
+#footer-wrapper-big .footer-main-content .footer-social-media ul li p {
   font-size: 20px;
   color: var(--text-white);
   line-height: 30px;
   font-weight: 300;
 }
-#footer-wrapper .footer-copyright {
+#footer-wrapper-big .footer-copyright {
   background-color: var(--bg-gray);
   padding: 7px 0;
 }
-#footer-wrapper .footer-copyright .footer-copyright-text {
+#footer-wrapper-big .footer-copyright .footer-copyright-text {
   text-align: center;
   padding-left: 0 !important;
 }
-#footer-wrapper .footer-copyright .footer-copyright-text p {
+#footer-wrapper-big .footer-copyright .footer-copyright-text p {
   font-size: 14px;
   color: var(--text-primary-color);
   line-height: 18px;
