@@ -476,12 +476,15 @@ Home Page CSS
   margin: 0 auto;
   padding: 25px 0;
 }
-#footer-wrapper-big .footer-main-content {
+#footer-wrapper-big .footer-main-content,
+#footer-wrapper-small,
+#footer-wrapper-small .accordion-body {
   background-color: var(--bg-primary-color);
   padding-top: 36px;
   padding-bottom: 36px;
 }
-#footer-wrapper-big .footer-main-content .footer-head-office h5 {
+#footer-wrapper-big .footer-main-content .footer-head-office h5,
+#footer-wrapper-small .accordion .accordion-body .footer-head-office h5 {
   font-size: 20px;
   color: var(--text-white);
   line-height: 30px;
@@ -489,7 +492,8 @@ Home Page CSS
   margin-bottom: 18px;
   position: relative;
 }
-#footer-wrapper-big .footer-main-content .footer-head-office h5::after {
+#footer-wrapper-big .footer-main-content .footer-head-office h5::after,
+#footer-wrapper-small .accordion .accordion-body .footer-head-office h5::after {
   content: "";
   position: absolute;
   width: 72px;
@@ -498,19 +502,22 @@ Home Page CSS
   bottom: 0;
   left: 0;
 }
-#footer-wrapper-big .footer-main-content .footer-head-office ul li p {
+#footer-wrapper-big .footer-main-content .footer-head-office ul li p,
+#footer-wrapper-small .accordion .accordion-body .footer-head-office ul li p {
   font-size: 20px;
   color: var(--text-white);
   line-height: 30px;
   font-weight: 300;
 }
-#footer-wrapper-big .footer-main-content .footer-head-office ul li i {
+#footer-wrapper-big .footer-main-content .footer-head-office ul li i,
+#footer-wrapper-small .accordion .accordion-body .footer-head-office ul li i {
   font-size: 20px;
   color: var(--text-white);
   line-height: 30px;
   padding-right: 25px;
 }
-#footer-wrapper-big .footer-main-content .footer-about h5 {
+#footer-wrapper-big .footer-main-content .footer-about h5,
+#footer-wrapper-small .accordion .accordion-body .footer-about h5 {
   font-size: 20px;
   color: var(--text-white);
   line-height: 30px;
@@ -518,7 +525,8 @@ Home Page CSS
   margin-bottom: 18px;
   position: relative;
 }
-#footer-wrapper-big .footer-main-content .footer-about h5::after {
+#footer-wrapper-big .footer-main-content .footer-about h5::after, 
+#footer-wrapper-small .accordion .accordion-body .footer-about h5::after {
   content: "";
   position: absolute;
   width: 48px;
@@ -527,7 +535,8 @@ Home Page CSS
   bottom: 0;
   left: 0;
 }
-#footer-wrapper-big .footer-main-content .footer-about ul li a {
+#footer-wrapper-big .footer-main-content .footer-about ul li a, 
+#footer-wrapper-small .accordion .accordion-body .footer-about ul li a {
   font-size: 20px;
   color: var(--text-white);
   line-height: 30px;
@@ -535,7 +544,8 @@ Home Page CSS
   position: relative;
   margin-top: 5px;
 }
-#footer-wrapper-big .footer-main-content .footer-about ul li a::after {
+#footer-wrapper-big .footer-main-content .footer-about ul li a::after, 
+#footer-wrapper-small .accordion .accordion-body .footer-about ul li a::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -548,7 +558,8 @@ Home Page CSS
   height: 3px;
   transition: all linear 0.4s;
 }
-#footer-wrapper-big .footer-main-content .footer-about ul li a:hover::after {
+#footer-wrapper-big .footer-main-content .footer-about ul li a:hover::after, 
+#footer-wrapper-small .accordion .accordion-body .footer-about ul li a:hover::after {
   width: 100%;
 }
 #footer-wrapper-big .footer-main-content .footer-social-media h5 {
