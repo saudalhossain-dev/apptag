@@ -628,6 +628,49 @@ Home Page CSS
   line-height: 18px;
   font-weight: 200;
 }
+#footer-wrapper-small .accordion-item {
+  background-color: transparent;
+  border: none;
+}
+#footer-wrapper-small .accordion-item .accordion-header .accordion-button {
+  background-color: transparent;
+}
+#footer-wrapper-small .accordion .accordion-item .accordion-header .accordion-button h5 {
+  font-size: 20px;
+  color: var(--text-white);
+  line-height: 30px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  position: relative;
+}
+#footer-wrapper-small .footer-wrapper-small-bottom {
+  padding-top: 24px;
+  margin:  0 10px;
+  border-top: 1px solid #eeeeee80;
+
+}
+#footer-wrapper-small .footer-copyright .footer-copyright-text p {
+  color: #eeeeee80;
+}
+#footer-wrapper-small .footer-social-media {
+  padding-top: 36px;
+}
+#footer-wrapper-small .footer-social-media ul li i {
+  font-size: 28px;
+  color: var(--bg-gray);
+  line-height: 42px;
+  margin: 0 10px;
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  text-align: center;
+  transition: all linear 0.6s;
+}
+#footer-wrapper-small .footer-social-media ul li i:hover {
+  color: var(--text-blue);
+  background-color: var(--bg-gray);
+}
 /* Footer CSS Part End */
 
 /* ===========================
