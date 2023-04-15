@@ -7,6 +7,11 @@
     min-height: 330px;
   }
   /* Services CSS Part End */
+  /* Footer CSS Part Start */
+  #footer-wrapper-small {
+    display: none;
+  }
+  /* Footer CSS Part End */
 }
 /* ================================
 ========Media Query 1399px=========
@@ -42,6 +47,11 @@
     right: -25px;
   }
   /* Expart CSS Part End */
+  /* Footer CSS Part Start */
+  #footer-wrapper-small {
+    display: none;
+  }
+  /* Footer CSS Part End */
 }
 /* ================================
 ========Media Query 1199px=========
@@ -91,6 +101,11 @@
     margin-left: 0px;
   }
   /* About CSS Part End */
+  /* Footer CSS Part Start */
+  #footer-wrapper-small {
+    display: none;
+  }
+  /* Footer CSS Part End */
 }
 /* ================================
 ========Media Query 991px==========
@@ -123,6 +138,11 @@
     min-height: 330px;
   }
   /* Services CSS Part End */
+  /* Footer CSS Part Start */
+  #footer-wrapper-small {
+    display: none;
+  }
+  /* Footer CSS Part End */
 }
 /* ================================
 ========Media Query 767px==========
@@ -150,6 +170,11 @@
     height: 75px;
   }
   /* About CSS Part End */
+  /* Footer CSS Part Start */
+  #footer-wrapper-small {
+    display: none;
+  }
+  /* Footer CSS Part End */
 }
 /* ================================
 ========Media Query 575px==========
