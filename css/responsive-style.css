@@ -13,6 +13,13 @@
   }
   /* Footer CSS Part End */
 }
+@media (min-width: 576px) and (max-width: 1399px) {
+  /* Footer CSS Part Start */
+  #footer-wrapper-small {
+    display: none;
+  }
+  /* Footer CSS Part End */
+}
 /* ================================
 ========Media Query 1399px=========
 ================================ */
@@ -47,11 +54,6 @@
     right: -25px;
   }
   /* Expart CSS Part End */
-  /* Footer CSS Part Start */
-  #footer-wrapper-small {
-    display: none;
-  }
-  /* Footer CSS Part End */
 }
 /* ================================
 ========Media Query 1199px=========
@@ -102,9 +104,9 @@
   }
   /* About CSS Part End */
   /* Footer CSS Part Start */
-  #footer-wrapper-small {
+  /* #footer-wrapper-small {
     display: none;
-  }
+  } */
   /* Footer CSS Part End */
 }
 /* ================================
@@ -139,9 +141,9 @@
   }
   /* Services CSS Part End */
   /* Footer CSS Part Start */
-  #footer-wrapper-small {
+  /* #footer-wrapper-small {
     display: none;
-  }
+  } */
   /* Footer CSS Part End */
 }
 /* ================================
@@ -171,9 +173,9 @@
   }
   /* About CSS Part End */
   /* Footer CSS Part Start */
-  #footer-wrapper-small {
+  /* #footer-wrapper-small {
     display: none;
-  }
+  } */
   /* Footer CSS Part End */
 }
 /* ================================
