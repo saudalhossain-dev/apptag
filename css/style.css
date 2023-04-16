@@ -643,6 +643,9 @@ Home Page CSS
   margin-bottom: 18px;
   position: relative;
 }
+#footer-wrapper-small .accordion .accordion-item .accordion-header .accordion-button::after {
+  color: var(--text-white);
+}
 #footer-wrapper-small .footer-wrapper-small-bottom {
   padding-top: 24px;
   margin:  0 10px;
@@ -696,8 +699,8 @@ About Page CSS
 /* About CSS Part Start */
 #about-page-about-wrapper {
   background-color: var(--bg-gray);
-  padding-top: 140px;
-  padding-bottom: 192px;
+  padding-top: 50px;
+  padding-bottom: 17px;
 }
 #about-page-about-wrapper
   .about-page-about-content-wrapper
@@ -723,6 +726,7 @@ About Page CSS
   color: var(--text-primary-color);
   line-height: 27px;
   padding-bottom: 26px;
+  text-align: justify;
 }
 /* About CSS Part End */
 
@@ -962,5 +966,5 @@ Expert Page CSS
   line-height: 21px;
   font-weight: 300;
   color: var(--text-primary-color);
-  text-align: center;
+  text-align: justify;
 }
