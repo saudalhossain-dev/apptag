@@ -242,17 +242,20 @@ Home Page CSS
   margin-bottom: 15px;
 }
 #service-wrapper .service-item .service-item-card .service-rollover-icon {
-  opacity: 0;
-  visibility: collapse;
+  display: none;
+  /* opacity: 0;
+  visibility: collapse; */
   /* transition: all linear 0.4s; */
 }
 #service-wrapper .service-item .service-item-card:hover .service-rollover-icon {
-  opacity: 1;
-  visibility: visible;
+  display: block;
+  /* opacity: 1;
+  visibility: visible; */
 }
 #service-wrapper .service-item .service-item-card:hover .service-main-icon {
-  opacity: 0;
-  visibility: collapse;
+  display: none;
+  /* opacity: 0;
+  visibility: collapse; */
 }
 #service-wrapper .service-item .service-item-card h5 {
   font-size: 20px;
