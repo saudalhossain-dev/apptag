@@ -225,6 +225,7 @@ Home Page CSS
   color: var(--text-primary-color);
   font-weight: 300;
   transition: all linear 0.4s;
+  text-align: justify;
 }
 #service-wrapper .service-item .service-item-card {
   padding: 37px 35px 41px 36px;
@@ -239,6 +240,19 @@ Home Page CSS
 }
 #service-wrapper .service-item .service-item-card img {
   margin-bottom: 15px;
+}
+#service-wrapper .service-item .service-item-card .service-rollover-icon {
+  opacity: 0;
+  visibility: collapse;
+  /* transition: all linear 0.4s; */
+}
+#service-wrapper .service-item .service-item-card:hover .service-rollover-icon {
+  opacity: 1;
+  visibility: visible;
+}
+#service-wrapper .service-item .service-item-card:hover .service-main-icon {
+  opacity: 0;
+  visibility: collapse;
 }
 #service-wrapper .service-item .service-item-card h5 {
   font-size: 20px;
@@ -256,6 +270,7 @@ Home Page CSS
   height: 88px;
   overflow: hidden;
   transition: all linear 0.4s;
+  text-align: justify;
 }
 #service-wrapper .service-item .service-item-card:hover p {
   color: var(--text-white);
@@ -634,6 +649,7 @@ Home Page CSS
 }
 #footer-wrapper-small .accordion-item .accordion-header .accordion-button {
   background-color: transparent;
+  position: relative;
 }
 #footer-wrapper-small .accordion .accordion-item .accordion-header .accordion-button h5 {
   font-size: 20px;
@@ -644,7 +660,19 @@ Home Page CSS
   position: relative;
 }
 #footer-wrapper-small .accordion .accordion-item .accordion-header .accordion-button::after {
+  content: '';
+  position: absolute;
+  right: 18px;
+  bottom: 45%;
+  /* transform: translateY(-50%); */
+  background-image: url('../images/up-arrow.svg');
+  background-size: 18px;
+  background-position: center center;
+  background-repeat: no-repeat;
   color: var(--text-white);
+}
+#footer-wrapper-small .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after{
+  background-image: url('../images/down-arrow.svg');
 }
 #footer-wrapper-small .footer-wrapper-small-bottom {
   padding-top: 24px;
