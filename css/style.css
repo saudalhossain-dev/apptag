@@ -1013,8 +1013,13 @@ Project Submit Page CSS
   margin-right: 5px;
 }
 /* Form CSS Part End */
+/* Contact CSS Part Start */
+.project-submit-contact-wrapper {
+  padding: 60px 0 20px 0;
+}
+/* Contact CSS Part End */
 /* ===========================
-Profile Submit Page CSS
+Profile Page CSS
 =========================== */
 /* Banner CSS Part Start */
 .profile-page-banner-wrapper {
