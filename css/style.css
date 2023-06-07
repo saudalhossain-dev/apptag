@@ -1013,3 +1013,39 @@ Project Submit Page CSS
   margin-right: 5px;
 }
 /* Form CSS Part End */
+/* ===========================
+Profile Submit Page CSS
+=========================== */
+/* Banner CSS Part Start */
+.profile-page-banner-wrapper {
+  padding-bottom: 190px !important;
+}
+/* Banner CSS Part Start */
+/* Form CSS Part Start */
+.profile-page-wrapper form {
+  margin-top: 20px !important;
+}
+.profile-page-expert-detail {
+  min-height: 240px;
+  max-height: 320px;
+}
+.profile-page-expert-image-wrapper {
+  margin-top: -200px;
+}
+.profile-page-expert-image {
+  min-width: 240px;
+  max-width: 320px;
+}
+#contact-us-wrapper .profile-page-form-section-title {
+  text-align: left;
+}
+#contact-us-wrapper .profile-page-form-section-title h1 {
+  font-size: 36px;
+  line-height: 48px;
+  color: var(--text-primary-color);
+  font-weight: 700;
+}
+.profile-page-expert-image h4 {
+  display: inline-block;
+}
+/* Form CSS Part End */

@@ -140,6 +140,9 @@
     min-height: 330px;
   }
   /* Services CSS Part End */
+  /* Profile Page Expert CSS Start */
+
+  /* Profile Page Expert CSS End */
   /* Footer CSS Part Start */
   /* #footer-wrapper-small {
     display: none;
@@ -172,6 +175,11 @@
     height: 75px;
   }
   /* About CSS Part End */
+  /* Profile Page Expert CSS Start */
+  .profile-page-expert-image-wrapper {
+    margin-top: -175px;
+  }
+  /* Profile Page Expert CSS End */
   /* Footer CSS Part Start */
   #footer-wrapper-big {
     display: none;
@@ -364,6 +372,11 @@
     font-weight: 300;
   }
   /* Expert CSS Part End */
+  /* Profile Page Expert CSS Start */
+  .profile-page-expert-image-wrapper {
+    margin-top: -210px;
+  }
+  /* Profile Page Expert CSS End */
   /* Footer CSS Part Start */
   #footer-wrapper-big {
     display: none;
